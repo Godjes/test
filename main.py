@@ -8,7 +8,9 @@ from typing import Union
 import requests
 
 from exceptions import ExceptionStatusError
+import time
 
+t = time.time()
 
 class Swapi:
     """
@@ -78,15 +80,18 @@ class Swapi:
         """
         url: str = f"{self.base_url}people/"
         homeworlds: dict = {}
+        homeworld_urls = set()
+
         while url:
             try:
-                logging.info(f'Request running{url}')
+                logging.info(f'Выполняется запрос {url}')
                 response = requests.get(url)
             except requests.RequestException as error:
-                raise ConnectionError(f'Program failure {url}, {error}')
+                raise ConnectionError(f'Сбой программы {url}, {error}')
+
             if response.status_code != HTTPStatus.OK:
                 raise ExceptionStatusError((
-                    f"Сбой в работе программы: {url} "
+                    f"Сбой программы: {url} "
                     f"{response.status_code}"
                     f"{response.reason}"
                     f"{response.text}"
@@ -94,29 +99,34 @@ class Swapi:
                 )
             data: dict = response.json()
             for planet in data['results']:
-                try:
-                    logging.info(f'Request running {url}')
-                    homeworld = requests.get(planet['homeworld'])
-                except requests.RequestException as error:
-                    raise ConnectionError(f'Program failure {url}, {error}')
-                if response.status_code != HTTPStatus.OK:
-                    raise ExceptionStatusError((
-                        f"Сбой в работе программы: {url} "
-                        f"{response.status_code}"
-                        f"{response.reason}"
-                        f"{response.text}"
-                        )
-                    )
-                homeworld = homeworld.json()
-                homeworld_id = planet['homeworld'].split('/')[-2]
-                homeworlds[homeworld_id] = {
-                    'name': homeworld['name'],
-                    'diameter': homeworld['diameter'],
-                    'population': homeworld['population'],
-                    'rotation_period': homeworld['rotation_period'],
-                    'orbital_period': homeworld['orbital_period'],
-                }
+                homeworld_urls.add(planet['homeworld'])
+
             url = data['next']
+        for homeworld_url in homeworld_urls:
+            try:
+                logging.info(f'Выполняется запрос {homeworld_url}')
+                homeworld_response = requests.get(homeworld_url)
+                homeworld_data = homeworld_response.json()  
+                homeworld_id = homeworld_url.split('/')[-2]
+                homeworlds[homeworld_id] = {
+                    'name': homeworld_data['name'],
+                    'diameter': homeworld_data['diameter'],
+                    'population': homeworld_data['population'],
+                    'rotation_period': homeworld_data['rotation_period'],
+                    'orbital_period': homeworld_data['orbital_period'],
+                }
+            except requests.RequestException as error:
+                raise ConnectionError(f'Сбой программы {homeworld_url}, {error}')
+
+            if homeworld_response.status_code != HTTPStatus.OK:
+                raise ExceptionStatusError((
+                    f"Сбой программы: {homeworld_url} "
+                    f"{homeworld_response.status_code}"
+                    f"{homeworld_response.reason}"
+                    f"{homeworld_response.text}"
+                    )
+                )
+
         return homeworlds
 
     def download_images(self, character_id: int) -> Union[bytes, None]:
@@ -292,7 +302,6 @@ class DataProcessor:
         characters = self.swapi.get_characters()
         planets = self.swapi.get_planets()
 
-        # Создание новых записей планет в базе данных Odoo
         for planet_id, planet_data in planets.items():
             try:
                 existing_planet = self.odoo_repo.get_planet(

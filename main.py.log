@@ -1,0 +1,280 @@
+[2024-03-06 12:20:54] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/
+[2024-03-06 12:20:54] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=2
+[2024-03-06 12:20:54] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=3
+[2024-03-06 12:20:55] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=4
+[2024-03-06 12:20:55] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=5
+[2024-03-06 12:20:56] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=6
+[2024-03-06 12:20:56] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=7
+[2024-03-06 12:20:57] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=8
+[2024-03-06 12:20:57] [INFO] [get_characters] [56]> Request running https://swapi.dev/api/people/?page=9
+[2024-03-06 12:20:58] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/
+[2024-03-06 12:20:58] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=2
+[2024-03-06 12:20:59] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=3
+[2024-03-06 12:20:59] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=4
+[2024-03-06 12:21:00] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=5
+[2024-03-06 12:21:01] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=6
+[2024-03-06 12:21:01] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=7
+[2024-03-06 12:21:02] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=8
+[2024-03-06 12:21:03] [INFO] [get_planets] [87]> Выполняется запрос https://swapi.dev/api/people/?page=9
+[2024-03-06 12:21:03] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/39/
+[2024-03-06 12:21:03] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/55/
+[2024-03-06 12:21:04] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/33/
+[2024-03-06 12:21:04] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/1/
+[2024-03-06 12:21:05] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/59/
+[2024-03-06 12:21:05] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/30/
+[2024-03-06 12:21:06] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/34/
+[2024-03-06 12:21:06] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/22/
+[2024-03-06 12:21:06] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/9/
+[2024-03-06 12:21:07] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/50/
+[2024-03-06 12:21:07] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/11/
+[2024-03-06 12:21:08] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/8/
+[2024-03-06 12:21:08] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/2/
+[2024-03-06 12:21:08] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/49/
+[2024-03-06 12:21:09] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/54/
+[2024-03-06 12:21:09] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/28/
+[2024-03-06 12:21:09] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/36/
+[2024-03-06 12:21:10] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/24/
+[2024-03-06 12:21:10] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/42/
+[2024-03-06 12:21:10] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/45/
+[2024-03-06 12:21:11] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/23/
+[2024-03-06 12:21:11] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/10/
+[2024-03-06 12:21:11] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/57/
+[2024-03-06 12:21:12] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/26/
+[2024-03-06 12:21:12] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/58/
+[2024-03-06 12:21:12] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/47/
+[2024-03-06 12:21:13] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/20/
+[2024-03-06 12:21:13] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/41/
+[2024-03-06 12:21:13] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/60/
+[2024-03-06 12:21:14] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/18/
+[2024-03-06 12:21:14] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/12/
+[2024-03-06 12:21:14] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/21/
+[2024-03-06 12:21:15] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/38/
+[2024-03-06 12:21:15] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/7/
+[2024-03-06 12:21:15] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/44/
+[2024-03-06 12:21:16] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/6/
+[2024-03-06 12:21:16] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/31/
+[2024-03-06 12:21:16] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/52/
+[2024-03-06 12:21:17] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/32/
+[2024-03-06 12:21:17] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/29/
+[2024-03-06 12:21:17] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/48/
+[2024-03-06 12:21:18] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/37/
+[2024-03-06 12:21:18] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/56/
+[2024-03-06 12:21:18] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/40/
+[2024-03-06 12:21:19] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/35/
+[2024-03-06 12:21:19] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/51/
+[2024-03-06 12:21:19] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/14/
+[2024-03-06 12:21:20] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/43/
+[2024-03-06 12:21:20] [INFO] [get_planets] [107]> Выполняется запрос https://swapi.dev/api/planets/53/
+[2024-03-06 12:21:20] [INFO] [process_data] [330]> Entity: Planet, Name: ('Vulpter',), Remote ID: 39, Odoo ID: 1955
+[2024-03-06 12:21:20] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/48.jpg
+[2024-03-06 12:21:21] [INFO] [process_data] [357]> Entity: Character, Name: Dud Bolt, Remote ID: 48, Odoo ID: 1514
+[2024-03-06 12:21:21] [INFO] [process_data] [330]> Entity: Planet, Name: ('Ojom',), Remote ID: 55, Odoo ID: 1956
+[2024-03-06 12:21:21] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/71.jpg
+[2024-03-06 12:21:21] [INFO] [process_data] [357]> Entity: Character, Name: Dexter Jettster, Remote ID: 71, Odoo ID: 1515
+[2024-03-06 12:21:21] [INFO] [process_data] [330]> Entity: Planet, Name: ('Sullust',), Remote ID: 33, Odoo ID: 1957
+[2024-03-06 12:21:21] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/31.jpg
+[2024-03-06 12:21:21] [INFO] [process_data] [357]> Entity: Character, Name: Nien Nunb, Remote ID: 31, Odoo ID: 1516
+[2024-03-06 12:21:21] [INFO] [process_data] [330]> Entity: Planet, Name: ('Tatooine',), Remote ID: 1, Odoo ID: 1958
+[2024-03-06 12:21:21] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/1.jpg
+[2024-03-06 12:21:22] [INFO] [process_data] [357]> Entity: Character, Name: Luke Skywalker, Remote ID: 1, Odoo ID: 1517
+[2024-03-06 12:21:22] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/2.jpg
+[2024-03-06 12:21:22] [INFO] [process_data] [357]> Entity: Character, Name: C-3PO, Remote ID: 2, Odoo ID: 1518
+[2024-03-06 12:21:22] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/4.jpg
+[2024-03-06 12:21:22] [INFO] [process_data] [357]> Entity: Character, Name: Darth Vader, Remote ID: 4, Odoo ID: 1519
+[2024-03-06 12:21:22] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/6.jpg
+[2024-03-06 12:21:23] [INFO] [process_data] [357]> Entity: Character, Name: Owen Lars, Remote ID: 6, Odoo ID: 1520
+[2024-03-06 12:21:23] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/7.jpg
+[2024-03-06 12:21:23] [INFO] [process_data] [357]> Entity: Character, Name: Beru Whitesun lars, Remote ID: 7, Odoo ID: 1521
+[2024-03-06 12:21:23] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/8.jpg
+[2024-03-06 12:21:24] [INFO] [process_data] [357]> Entity: Character, Name: R5-D4, Remote ID: 8, Odoo ID: 1522
+[2024-03-06 12:21:24] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/9.jpg
+[2024-03-06 12:21:24] [INFO] [process_data] [357]> Entity: Character, Name: Biggs Darklighter, Remote ID: 9, Odoo ID: 1523
+[2024-03-06 12:21:24] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/11.jpg
+[2024-03-06 12:21:24] [INFO] [process_data] [357]> Entity: Character, Name: Anakin Skywalker, Remote ID: 11, Odoo ID: 1524
+[2024-03-06 12:21:24] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/43.jpg
+[2024-03-06 12:21:25] [INFO] [process_data] [357]> Entity: Character, Name: Shmi Skywalker, Remote ID: 43, Odoo ID: 1525
+[2024-03-06 12:21:25] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/62.jpg
+[2024-03-06 12:21:25] [INFO] [process_data] [357]> Entity: Character, Name: Cliegg Lars, Remote ID: 62, Odoo ID: 1526
+[2024-03-06 12:21:25] [INFO] [process_data] [330]> Entity: Planet, Name: ('Kalee',), Remote ID: 59, Odoo ID: 1959
+[2024-03-06 12:21:25] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/79.jpg
+[2024-03-06 12:21:25] [INFO] [process_data] [357]> Entity: Character, Name: Grievous, Remote ID: 79, Odoo ID: 1527
+[2024-03-06 12:21:25] [INFO] [process_data] [330]> Entity: Planet, Name: ('Socorro',), Remote ID: 30, Odoo ID: 1960
+[2024-03-06 12:21:25] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/25.jpg
+[2024-03-06 12:21:26] [INFO] [process_data] [357]> Entity: Character, Name: Lando Calrissian, Remote ID: 25, Odoo ID: 1528
+[2024-03-06 12:21:26] [INFO] [process_data] [330]> Entity: Planet, Name: ('Toydaria',), Remote ID: 34, Odoo ID: 1961
+[2024-03-06 12:21:26] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/40.jpg
+[2024-03-06 12:21:26] [INFO] [process_data] [357]> Entity: Character, Name: Watto, Remote ID: 40, Odoo ID: 1529
+[2024-03-06 12:21:26] [INFO] [process_data] [330]> Entity: Planet, Name: ('Corellia',), Remote ID: 22, Odoo ID: 1962
+[2024-03-06 12:21:26] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/14.jpg
+[2024-03-06 12:21:26] [INFO] [process_data] [357]> Entity: Character, Name: Han Solo, Remote ID: 14, Odoo ID: 1530
+[2024-03-06 12:21:26] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/18.jpg
+[2024-03-06 12:21:27] [INFO] [process_data] [357]> Entity: Character, Name: Wedge Antilles, Remote ID: 18, Odoo ID: 1531
+[2024-03-06 12:21:27] [INFO] [process_data] [330]> Entity: Planet, Name: ('Coruscant',), Remote ID: 9, Odoo ID: 1963
+[2024-03-06 12:21:27] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/34.jpg
+[2024-03-06 12:21:27] [INFO] [process_data] [357]> Entity: Character, Name: Finis Valorum, Remote ID: 34, Odoo ID: 1532
+[2024-03-06 12:21:27] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/55.jpg
+[2024-03-06 12:21:27] [INFO] [process_data] [357]> Entity: Character, Name: Adi Gallia, Remote ID: 55, Odoo ID: 1533
+[2024-03-06 12:21:27] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/74.jpg
+[2024-03-06 12:21:28] [INFO] [process_data] [357]> Entity: Character, Name: Jocasta Nu, Remote ID: 74, Odoo ID: 1534
+[2024-03-06 12:21:28] [INFO] [process_data] [330]> Entity: Planet, Name: ('Champala',), Remote ID: 50, Odoo ID: 1964
+[2024-03-06 12:21:28] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/59.jpg
+[2024-03-06 12:21:28] [INFO] [process_data] [357]> Entity: Character, Name: Mas Amedda, Remote ID: 59, Odoo ID: 1535
+[2024-03-06 12:21:28] [INFO] [process_data] [330]> Entity: Planet, Name: ('Geonosis',), Remote ID: 11, Odoo ID: 1965
+[2024-03-06 12:21:28] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/63.jpg
+[2024-03-06 12:21:28] [INFO] [process_data] [357]> Entity: Character, Name: Poggle the Lesser, Remote ID: 63, Odoo ID: 1536
+[2024-03-06 12:21:28] [INFO] [process_data] [330]> Entity: Planet, Name: ('Naboo',), Remote ID: 8, Odoo ID: 1966
+[2024-03-06 12:21:28] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/3.jpg
+[2024-03-06 12:21:29] [INFO] [process_data] [357]> Entity: Character, Name: R2-D2, Remote ID: 3, Odoo ID: 1537
+[2024-03-06 12:21:29] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/21.jpg
+[2024-03-06 12:21:29] [INFO] [process_data] [357]> Entity: Character, Name: Palpatine, Remote ID: 21, Odoo ID: 1538
+[2024-03-06 12:21:29] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/35.jpg
+[2024-03-06 12:21:29] [INFO] [process_data] [357]> Entity: Character, Name: Padmé Amidala, Remote ID: 35, Odoo ID: 1539
+[2024-03-06 12:21:29] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/36.jpg
+[2024-03-06 12:21:30] [INFO] [process_data] [357]> Entity: Character, Name: Jar Jar Binks, Remote ID: 36, Odoo ID: 1540
+[2024-03-06 12:21:30] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/37.jpg
+[2024-03-06 12:21:30] [INFO] [process_data] [357]> Entity: Character, Name: Roos Tarpals, Remote ID: 37, Odoo ID: 1541
+[2024-03-06 12:21:30] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/38.jpg
+[2024-03-06 12:21:30] [INFO] [process_data] [357]> Entity: Character, Name: Rugor Nass, Remote ID: 38, Odoo ID: 1542
+[2024-03-06 12:21:30] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/39.jpg
+[2024-03-06 12:21:31] [INFO] [process_data] [357]> Entity: Character, Name: Ric Olié, Remote ID: 39, Odoo ID: 1543
+[2024-03-06 12:21:31] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/42.jpg
+[2024-03-06 12:21:31] [INFO] [process_data] [357]> Entity: Character, Name: Quarsh Panaka, Remote ID: 42, Odoo ID: 1544
+[2024-03-06 12:21:31] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/60.jpg
+[2024-03-06 12:21:31] [INFO] [process_data] [357]> Entity: Character, Name: Gregar Typho, Remote ID: 60, Odoo ID: 1545
+[2024-03-06 12:21:31] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/61.jpg
+[2024-03-06 12:21:32] [INFO] [process_data] [357]> Entity: Character, Name: Cordé, Remote ID: 61, Odoo ID: 1546
+[2024-03-06 12:21:32] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/66.jpg
+[2024-03-06 12:21:32] [INFO] [process_data] [357]> Entity: Character, Name: Dormé, Remote ID: 66, Odoo ID: 1547
+[2024-03-06 12:21:32] [INFO] [process_data] [330]> Entity: Planet, Name: ('Alderaan',), Remote ID: 2, Odoo ID: 1967
+[2024-03-06 12:21:32] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/5.jpg
+[2024-03-06 12:21:32] [INFO] [process_data] [357]> Entity: Character, Name: Leia Organa, Remote ID: 5, Odoo ID: 1548
+[2024-03-06 12:21:32] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/68.jpg
+[2024-03-06 12:21:33] [INFO] [process_data] [357]> Entity: Character, Name: Bail Prestor Organa, Remote ID: 68, Odoo ID: 1549
+[2024-03-06 12:21:33] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/81.jpg
+[2024-03-06 12:21:33] [INFO] [process_data] [357]> Entity: Character, Name: Raymus Antilles, Remote ID: 81, Odoo ID: 1550
+[2024-03-06 12:21:33] [INFO] [process_data] [330]> Entity: Planet, Name: ('Dorin',), Remote ID: 49, Odoo ID: 1968
+[2024-03-06 12:21:33] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/58.jpg
+[2024-03-06 12:21:33] [INFO] [process_data] [357]> Entity: Character, Name: Plo Koon, Remote ID: 58, Odoo ID: 1551
+[2024-03-06 12:21:33] [INFO] [process_data] [330]> Entity: Planet, Name: ('Zolan',), Remote ID: 54, Odoo ID: 1969
+[2024-03-06 12:21:33] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/70.jpg
+[2024-03-06 12:21:34] [INFO] [process_data] [357]> Entity: Character, Name: Zam Wesell, Remote ID: 70, Odoo ID: 1552
+[2024-03-06 12:21:34] [INFO] [process_data] [330]> Entity: Planet, Name: ('unknown',), Remote ID: 28, Odoo ID: 1970
+[2024-03-06 12:21:34] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/20.jpg
+[2024-03-06 12:21:34] [INFO] [process_data] [357]> Entity: Character, Name: Yoda, Remote ID: 20, Odoo ID: 1553
+[2024-03-06 12:21:34] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/23.jpg
+[2024-03-06 12:21:35] [INFO] [process_data] [357]> Entity: Character, Name: IG-88, Remote ID: 23, Odoo ID: 1554
+[2024-03-06 12:21:35] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/29.jpg
+[2024-03-06 12:21:35] [INFO] [process_data] [357]> Entity: Character, Name: Arvel Crynyd, Remote ID: 29, Odoo ID: 1555
+[2024-03-06 12:21:35] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/32.jpg
+[2024-03-06 12:21:35] [INFO] [process_data] [357]> Entity: Character, Name: Qui-Gon Jinn, Remote ID: 32, Odoo ID: 1556
+[2024-03-06 12:21:35] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/75.jpg
+[2024-03-06 12:21:35] [INFO] [process_data] [357]> Entity: Character, Name: R4-P17, Remote ID: 75, Odoo ID: 1557
+[2024-03-06 12:21:36] [INFO] [process_data] [330]> Entity: Planet, Name: ('Dathomir',), Remote ID: 36, Odoo ID: 1971
+[2024-03-06 12:21:36] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/44.jpg
+[2024-03-06 12:21:36] [INFO] [process_data] [357]> Entity: Character, Name: Darth Maul, Remote ID: 44, Odoo ID: 1558
+[2024-03-06 12:21:36] [INFO] [process_data] [330]> Entity: Planet, Name: ('Nal Hutta',), Remote ID: 24, Odoo ID: 1972
+[2024-03-06 12:21:36] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/16.jpg
+[2024-03-06 12:21:36] [INFO] [process_data] [357]> Entity: Character, Name: Jabba Desilijic Tiure, Remote ID: 16, Odoo ID: 1559
+[2024-03-06 12:21:36] [INFO] [process_data] [330]> Entity: Planet, Name: ('Haruun Kal',), Remote ID: 42, Odoo ID: 1973
+[2024-03-06 12:21:36] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/51.jpg
+[2024-03-06 12:21:37] [INFO] [process_data] [357]> Entity: Character, Name: Mace Windu, Remote ID: 51, Odoo ID: 1560
+[2024-03-06 12:21:37] [INFO] [process_data] [330]> Entity: Planet, Name: ('Iridonia',), Remote ID: 45, Odoo ID: 1974
+[2024-03-06 12:21:37] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/54.jpg
+[2024-03-06 12:21:37] [INFO] [process_data] [357]> Entity: Character, Name: Eeth Koth, Remote ID: 54, Odoo ID: 1561
+[2024-03-06 12:21:37] [INFO] [process_data] [330]> Entity: Planet, Name: ('Rodia',), Remote ID: 23, Odoo ID: 1975
+[2024-03-06 12:21:37] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/15.jpg
+[2024-03-06 12:21:37] [INFO] [process_data] [357]> Entity: Character, Name: Greedo, Remote ID: 15, Odoo ID: 1562
+[2024-03-06 12:21:37] [INFO] [process_data] [330]> Entity: Planet, Name: ('Kamino',), Remote ID: 10, Odoo ID: 1976
+[2024-03-06 12:21:37] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/22.jpg
+[2024-03-06 12:21:38] [INFO] [process_data] [357]> Entity: Character, Name: Boba Fett, Remote ID: 22, Odoo ID: 1563
+[2024-03-06 12:21:38] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/72.jpg
+[2024-03-06 12:21:38] [INFO] [process_data] [357]> Entity: Character, Name: Lama Su, Remote ID: 72, Odoo ID: 1564
+[2024-03-06 12:21:38] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/73.jpg
+[2024-03-06 12:21:38] [INFO] [process_data] [357]> Entity: Character, Name: Taun We, Remote ID: 73, Odoo ID: 1565
+[2024-03-06 12:21:38] [INFO] [process_data] [330]> Entity: Planet, Name: ('Muunilinst',), Remote ID: 57, Odoo ID: 1977
+[2024-03-06 12:21:38] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/77.jpg
+[2024-03-06 12:21:39] [INFO] [process_data] [357]> Entity: Character, Name: San Hill, Remote ID: 77, Odoo ID: 1566
+[2024-03-06 12:21:39] [INFO] [process_data] [330]> Entity: Planet, Name: ('Bestine IV',), Remote ID: 26, Odoo ID: 1978
+[2024-03-06 12:21:39] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/19.jpg
+[2024-03-06 12:21:39] [INFO] [process_data] [357]> Entity: Character, Name: Jek Tono Porkins, Remote ID: 19, Odoo ID: 1567
+[2024-03-06 12:21:39] [INFO] [process_data] [330]> Entity: Planet, Name: ('Shili',), Remote ID: 58, Odoo ID: 1979
+[2024-03-06 12:21:39] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/78.jpg
+[2024-03-06 12:21:39] [INFO] [process_data] [357]> Entity: Character, Name: Shaak Ti, Remote ID: 78, Odoo ID: 1568
+[2024-03-06 12:21:39] [INFO] [process_data] [330]> Entity: Planet, Name: ('Iktotch',), Remote ID: 47, Odoo ID: 1980
+[2024-03-06 12:21:39] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/56.jpg
+[2024-03-06 12:21:40] [INFO] [process_data] [357]> Entity: Character, Name: Saesee Tiin, Remote ID: 56, Odoo ID: 1569
+[2024-03-06 12:21:40] [INFO] [process_data] [330]> Entity: Planet, Name: ('Stewjon',), Remote ID: 20, Odoo ID: 1981
+[2024-03-06 12:21:40] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/10.jpg
+[2024-03-06 12:21:40] [INFO] [process_data] [357]> Entity: Character, Name: Obi-Wan Kenobi, Remote ID: 10, Odoo ID: 1570
+[2024-03-06 12:21:40] [INFO] [process_data] [330]> Entity: Planet, Name: ('Tund',), Remote ID: 41, Odoo ID: 1982
+[2024-03-06 12:21:40] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/50.jpg
+[2024-03-06 12:21:40] [INFO] [process_data] [357]> Entity: Character, Name: Ben Quadinaros, Remote ID: 50, Odoo ID: 1571
+[2024-03-06 12:21:40] [INFO] [process_data] [330]> Entity: Planet, Name: ('Umbara',), Remote ID: 60, Odoo ID: 1983
+[2024-03-06 12:21:40] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/82.jpg
+[2024-03-06 12:21:41] [INFO] [process_data] [357]> Entity: Character, Name: Sly Moore, Remote ID: 82, Odoo ID: 1572
+[2024-03-06 12:21:41] [INFO] [process_data] [330]> Entity: Planet, Name: ('Cato Neimoidia',), Remote ID: 18, Odoo ID: 1984
+[2024-03-06 12:21:41] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/33.jpg
+[2024-03-06 12:21:41] [INFO] [process_data] [357]> Entity: Character, Name: Nute Gunray, Remote ID: 33, Odoo ID: 1573
+[2024-03-06 12:21:41] [INFO] [process_data] [330]> Entity: Planet, Name: ('Utapau',), Remote ID: 12, Odoo ID: 1985
+[2024-03-06 12:21:41] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/83.jpg
+[2024-03-06 12:21:41] [INFO] [process_data] [357]> Entity: Character, Name: Tion Medon, Remote ID: 83, Odoo ID: 1574
+[2024-03-06 12:21:41] [INFO] [process_data] [330]> Entity: Planet, Name: ('Eriadu',), Remote ID: 21, Odoo ID: 1986
+[2024-03-06 12:21:41] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/12.jpg
+[2024-03-06 12:21:42] [INFO] [process_data] [357]> Entity: Character, Name: Wilhuff Tarkin, Remote ID: 12, Odoo ID: 1575
+[2024-03-06 12:21:42] [INFO] [process_data] [330]> Entity: Planet, Name: ('Aleen Minor',), Remote ID: 38, Odoo ID: 1987
+[2024-03-06 12:21:42] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/47.jpg
+[2024-03-06 12:21:42] [INFO] [process_data] [357]> Entity: Character, Name: Ratts Tyerel, Remote ID: 47, Odoo ID: 1576
+[2024-03-06 12:21:42] [INFO] [process_data] [330]> Entity: Planet, Name: ('Endor',), Remote ID: 7, Odoo ID: 1988
+[2024-03-06 12:21:42] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/30.jpg
+[2024-03-06 12:21:42] [INFO] [process_data] [357]> Entity: Character, Name: Wicket Systri Warrick, Remote ID: 30, Odoo ID: 1577
+[2024-03-06 12:21:42] [INFO] [process_data] [330]> Entity: Planet, Name: ('Glee Anselm',), Remote ID: 44, Odoo ID: 1989
+[2024-03-06 12:21:42] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/53.jpg
+[2024-03-06 12:21:43] [INFO] [process_data] [357]> Entity: Character, Name: Kit Fisto, Remote ID: 53, Odoo ID: 1578
+[2024-03-06 12:21:43] [INFO] [process_data] [330]> Entity: Planet, Name: ('Bespin',), Remote ID: 6, Odoo ID: 1990
+[2024-03-06 12:21:43] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/26.jpg
+[2024-03-06 12:21:43] [INFO] [process_data] [357]> Entity: Character, Name: Lobot, Remote ID: 26, Odoo ID: 1579
+[2024-03-06 12:21:43] [INFO] [process_data] [330]> Entity: Planet, Name: ('Mon Cala',), Remote ID: 31, Odoo ID: 1991
+[2024-03-06 12:21:43] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/27.jpg
+[2024-03-06 12:21:44] [INFO] [process_data] [357]> Entity: Character, Name: Ackbar, Remote ID: 27, Odoo ID: 1580
+[2024-03-06 12:21:44] [INFO] [process_data] [330]> Entity: Planet, Name: ('Serenno',), Remote ID: 52, Odoo ID: 1992
+[2024-03-06 12:21:44] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/67.jpg
+[2024-03-06 12:21:44] [INFO] [process_data] [357]> Entity: Character, Name: Dooku, Remote ID: 67, Odoo ID: 1581
+[2024-03-06 12:21:44] [INFO] [process_data] [330]> Entity: Planet, Name: ('Chandrila',), Remote ID: 32, Odoo ID: 1993
+[2024-03-06 12:21:44] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/28.jpg
+[2024-03-06 12:21:44] [INFO] [process_data] [357]> Entity: Character, Name: Mon Mothma, Remote ID: 28, Odoo ID: 1582
+[2024-03-06 12:21:44] [INFO] [process_data] [330]> Entity: Planet, Name: ('Trandosha',), Remote ID: 29, Odoo ID: 1994
+[2024-03-06 12:21:44] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/24.jpg
+[2024-03-06 12:21:45] [INFO] [process_data] [357]> Entity: Character, Name: Bossk, Remote ID: 24, Odoo ID: 1583
+[2024-03-06 12:21:45] [INFO] [process_data] [330]> Entity: Planet, Name: ('Quermia',), Remote ID: 48, Odoo ID: 1995
+[2024-03-06 12:21:45] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/57.jpg
+[2024-03-06 12:21:45] [INFO] [process_data] [357]> Entity: Character, Name: Yarael Poof, Remote ID: 57, Odoo ID: 1584
+[2024-03-06 12:21:45] [INFO] [process_data] [330]> Entity: Planet, Name: ('Ryloth',), Remote ID: 37, Odoo ID: 1996
+[2024-03-06 12:21:45] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/45.jpg
+[2024-03-06 12:21:45] [INFO] [process_data] [357]> Entity: Character, Name: Bib Fortuna, Remote ID: 45, Odoo ID: 1585
+[2024-03-06 12:21:45] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/46.jpg
+[2024-03-06 12:21:46] [INFO] [process_data] [357]> Entity: Character, Name: Ayla Secura, Remote ID: 46, Odoo ID: 1586
+[2024-03-06 12:21:46] [INFO] [process_data] [330]> Entity: Planet, Name: ('Skako',), Remote ID: 56, Odoo ID: 1997
+[2024-03-06 12:21:46] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/76.jpg
+[2024-03-06 12:21:46] [INFO] [process_data] [357]> Entity: Character, Name: Wat Tambor, Remote ID: 76, Odoo ID: 1587
+[2024-03-06 12:21:46] [INFO] [process_data] [330]> Entity: Planet, Name: ('Troiken',), Remote ID: 40, Odoo ID: 1998
+[2024-03-06 12:21:46] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/49.jpg
+[2024-03-06 12:21:46] [INFO] [process_data] [357]> Entity: Character, Name: Gasgano, Remote ID: 49, Odoo ID: 1588
+[2024-03-06 12:21:46] [INFO] [process_data] [330]> Entity: Planet, Name: ('Malastare',), Remote ID: 35, Odoo ID: 1999
+[2024-03-06 12:21:46] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/41.jpg
+[2024-03-06 12:21:47] [INFO] [process_data] [357]> Entity: Character, Name: Sebulba, Remote ID: 41, Odoo ID: 1589
+[2024-03-06 12:21:47] [INFO] [process_data] [330]> Entity: Planet, Name: ('Mirial',), Remote ID: 51, Odoo ID: 2000
+[2024-03-06 12:21:47] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/64.jpg
+[2024-03-06 12:21:47] [INFO] [process_data] [357]> Entity: Character, Name: Luminara Unduli, Remote ID: 64, Odoo ID: 1590
+[2024-03-06 12:21:47] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/65.jpg
+[2024-03-06 12:21:47] [INFO] [process_data] [357]> Entity: Character, Name: Barriss Offee, Remote ID: 65, Odoo ID: 1591
+[2024-03-06 12:21:47] [INFO] [process_data] [330]> Entity: Planet, Name: ('Kashyyyk',), Remote ID: 14, Odoo ID: 2001
+[2024-03-06 12:21:47] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/13.jpg
+[2024-03-06 12:21:48] [INFO] [process_data] [357]> Entity: Character, Name: Chewbacca, Remote ID: 13, Odoo ID: 1592
+[2024-03-06 12:21:48] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/80.jpg
+[2024-03-06 12:21:48] [INFO] [process_data] [357]> Entity: Character, Name: Tarfful, Remote ID: 80, Odoo ID: 1593
+[2024-03-06 12:21:48] [INFO] [process_data] [330]> Entity: Planet, Name: ('Cerea',), Remote ID: 43, Odoo ID: 2002
+[2024-03-06 12:21:48] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/52.jpg
+[2024-03-06 12:21:48] [INFO] [process_data] [357]> Entity: Character, Name: Ki-Adi-Mundi, Remote ID: 52, Odoo ID: 1594
+[2024-03-06 12:21:48] [INFO] [process_data] [330]> Entity: Planet, Name: ('Concord Dawn',), Remote ID: 53, Odoo ID: 2003
+[2024-03-06 12:21:48] [INFO] [download_images] [141]> Request running https://starwars-visualguide.com/assets/img/characters/69.jpg
+[2024-03-06 12:21:49] [INFO] [process_data] [357]> Entity: Character, Name: Jango Fett, Remote ID: 69, Odoo ID: 1595
