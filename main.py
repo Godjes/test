@@ -1,71 +1,178 @@
 import base64
-import time
-import xmlrpc.client
 import logging
-import requests
 import sys
+import xmlrpc.client
+from http import HTTPStatus
+from typing import Union
 
-start_time = time.time()
+import requests
+
+from exceptions import ExceptionStatusError
 
 
 class Swapi:
+    """
+    Класс для получения данных.
+    ...
+    Атрибуты
+    --------
+    base_url : str
+        адрес для запроса данных
+    picture_url : str
+        адрес для получения изображений
+    Методы
+    ------
+    get_characters():
+        Получает данные о всех персонажах.
+    get_planets():
+        Получает данные о всех планетах.
+    get_planets():
+        Получает данные о всех планетах.
+    download_images():
+        Получает изображения для всех персонажей.
+    """
 
-    def __init__(self):
-        self.base_url = "https://swapi.dev/api/"
-        self.picture_url = (
+    def __init__(self) -> None:
+        self.base_url: str = "https://swapi.dev/api/"
+        self.picture_url: str = (
             'https://starwars-visualguide.com/assets/img/characters/{}.jpg'
         )
 
-    def get_characters(self):
-        url = f"{self.base_url}people/"
-        characters = []
+    def get_characters(self) -> list:
+        """
+        Получает всю информацию о персонажах.
+        ---------
+        Возвращаемое значение
+        ---------------------
+        list
+        """
+        url: str = f"{self.base_url}people/"
+        characters: list = []
 
         while url:
-            response = requests.get(url)
-            if response.status_code == 200:
-                data = response.json()
-                characters.extend(data['results'])
-                url = data['next']
-            else:
-                print("Failed to retrieve data from SWAPI")
-                break
-
+            try:
+                logging.info(f'Request running {url}')
+                response = requests.get(url)
+            except requests.RequestException as error:
+                raise ConnectionError(f'Request failed {url}, {error}')
+            if response.status_code != HTTPStatus.OK:
+                raise ExceptionStatusError((
+                    f"Program failure: {url} "
+                    f"{response.status_code}"
+                    f"{response.reason}"
+                    f"{response.text}"
+                    )
+                )
+            data: dict = response.json()
+            characters.extend(data['results'])
+            url = data['next']
         return characters
 
-    def get_planets(self):
-        url = f"{self.base_url}people/"
-        homeworlds = {}
+    def get_planets(self) -> dict:
+        """
+        Получает всю информацию о планетах.
+        ---------
+        Возвращаемое значение
+        ---------------------
+        dict
+        """
+        url: str = f"{self.base_url}people/"
+        homeworlds: dict = {}
         while url:
-            response = requests.get(url)
-            if response.status_code == 200:
-                data = response.json()
-                for planet in data['results']:
+            try:
+                logging.info(f'Request running{url}')
+                response = requests.get(url)
+            except requests.RequestException as error:
+                raise ConnectionError(f'Program failure {url}, {error}')
+            if response.status_code != HTTPStatus.OK:
+                raise ExceptionStatusError((
+                    f"Сбой в работе программы: {url} "
+                    f"{response.status_code}"
+                    f"{response.reason}"
+                    f"{response.text}"
+                    )
+                )
+            data: dict = response.json()
+            for planet in data['results']:
+                try:
+                    logging.info(f'Request running {url}')
                     homeworld = requests.get(planet['homeworld'])
-                    homeworld = homeworld.json()
-                    homeworld_id = planet['homeworld'].split('/')[-2]
-                    homeworlds[homeworld_id] = {
-                        'name': homeworld['name'],
-                        'diameter': homeworld['diameter'],
-                        'population': homeworld['population'],
-                        'rotation_period': homeworld['rotation_period'],
-                        'orbital_period': homeworld['orbital_period'],
-                    }
-                url = data['next']
-            else:
-                print("Ошибка при выполнении запроса:", response.status_code)
-
+                except requests.RequestException as error:
+                    raise ConnectionError(f'Program failure {url}, {error}')
+                if response.status_code != HTTPStatus.OK:
+                    raise ExceptionStatusError((
+                        f"Сбой в работе программы: {url} "
+                        f"{response.status_code}"
+                        f"{response.reason}"
+                        f"{response.text}"
+                        )
+                    )
+                homeworld = homeworld.json()
+                homeworld_id = planet['homeworld'].split('/')[-2]
+                homeworlds[homeworld_id] = {
+                    'name': homeworld['name'],
+                    'diameter': homeworld['diameter'],
+                    'population': homeworld['population'],
+                    'rotation_period': homeworld['rotation_period'],
+                    'orbital_period': homeworld['orbital_period'],
+                }
+            url = data['next']
         return homeworlds
 
-    def download_images(self, character_id):
-        response = requests.get(self.picture_url.format(character_id))
-        if response.status_code == 200:
-            return response.content
-        else:
-            print(f"Failed to download image for character {character_id}")
+    def download_images(self, character_id: int) -> Union[bytes, None]:
+        """
+        Получает изображение персонажей.
+        ---------
+        Возвращаемое значение
+        ---------------------
+        bytes
+        """
+        try:
+            logging.info((
+                f'Request running '
+                f'{self.picture_url.format(character_id)}'
+                )
+            )
+            response = requests.get(self.picture_url.format(character_id))
+        except requests.RequestException as error:
+            raise ConnectionError((
+                f'Program failure '
+                f'{self.picture_url.format(character_id)}, {error}'))
+        if response.status_code != HTTPStatus.OK:
+            logging.error(
+                f'Не удалось получить изображения '
+                f'для {character_id}'
+            )
             return None
+        return response.content
 
 
 class Odoo:
+    """
+    Класс для получения данных.
+    ...
+    Атрибуты
+    --------
+    url : str
+        адрес сервера
+    db : str
+        название БД
+    username : str
+        логин superuser
+    password : str
+        пароль superuser
+    Методы
+    ------
+    create_planet():
+        создает планету в БД
+    create_characters():
+        создает контакт в БД.
+    get_character():
+        Получает данные о контакте в Odoo.
+    get_planet():
+        Получает данные о планете в Odoo
+    """
+
     def __init__(self):
         self.url = 'http://localhost:8069/'
         self.db = 'odoo16'
@@ -84,24 +191,47 @@ class Odoo:
         )
 
     def create_planet(self, create_planet_data):
+        """
+        создает новую запись в БД
+        ---------
+        create_planet_data : dict
+            словарь с данными о планете
+        ---------------------
+        """
         return self.models.execute_kw(
             self.db, self.uid, self.password, 'res.planet', 'create',
             [create_planet_data]
         )
 
-    def create_characters(self, character, image_data, new_planet_id):
+    def create_characters(
+            self, character: dict, image_data: bytes, new_planet_id: int
+    ):
+        """
+        создает новую запись в БД
+        ---------
+        character : dict
+            данные о персонаже
+        image_data : bytes
+            изображение персонажа
+        new_planet_id: int
+            id планеты из БД
+        ---------------------
+        """
         try:
             if image_data is not None:
                 encoded_image = base64.b64encode(image_data).decode('utf-8')
+                return self.models.execute_kw(
+                    self.db, self.uid, self.password, 'res.partner', 'create',
+                    [{'name': character['name'],
+                        'image_1920': encoded_image,
+                        'planet': new_planet_id}]
+                    )
             else:
-                encoded_image = None
-
-            return self.models.execute_kw(
-                self.db, self.uid, self.password, 'res.partner', 'create',
-                [{'name': character['name'],
-                  'image_1920': encoded_image,
-                  'planet': new_planet_id}]
-            )
+                return self.models.execute_kw(
+                    self.db, self.uid, self.password, 'res.partner', 'create',
+                    [{'name': character['name'],
+                        'planet': new_planet_id}]
+                    )
         except Exception as e:
             log_message = (f"Failed to create:"
                            f"Entity: Character,"
@@ -110,6 +240,13 @@ class Odoo:
             logging.error(log_message)
 
     def get_character(self, character):
+        """
+        Получает данные о контакте в Odoo.
+        ---------
+        character : dict
+            данные о персонаже
+        ---------------------
+        """
         return self.models.execute_kw(
                             self.db, self.uid, self.password, 'res.partner',
                             'search',
@@ -117,6 +254,13 @@ class Odoo:
                         )
 
     def get_planet(self, name):
+        """
+        Получает данные о планете в Odoo
+        ---------
+        name : dict
+            данные о персонаже
+        ---------------------
+        """
         return self.models.execute_kw(
             self.db, self.uid, self.password, 'res.planet', 'search',
             [[('name', '=', name)]]
@@ -124,11 +268,27 @@ class Odoo:
 
 
 class DataProcessor:
+    """
+    Класс инициализрующий наполнение БД.
+    ...
+    Атрибуты
+    --------
+    swapi : class
+        Экземпляр класса Swapi
+    odoo_repo : class
+        Экземпляр класса Odoo
+    ------
+    process_data():
+        заполнение БД требуемыми данными
+    """
     def __init__(self, swapi, odoo_repo):
         self.swapi = swapi
         self.odoo_repo = odoo_repo
 
     def process_data(self):
+        """
+        заполнение БД требуемыми данными
+        """
         characters = self.swapi.get_characters()
         planets = self.swapi.get_planets()
 
@@ -153,16 +313,17 @@ class DataProcessor:
                             'orbital_period': str(orbital_period)
                         }
                     )
-                    log_message = (f"Entity: Planet,"
-                                   f"Name: {planet_data['name'],},"
-                                   f"Remote ID: {planet_id},"
+                    log_message = (f"Entity: Planet, "
+                                   f"Name: {planet_data['name'],}, "
+                                   f"Remote ID: {planet_id}, "
                                    f"Odoo ID: {new_planet_id}"
                                    )
                     logging.info(log_message)
                 else:
                     new_planet_id = existing_planet[0]
+                    logging.info(f"Planet already exist {planet_data['name']}")
             except Exception as e:
-                logging.error(f'Не удалось создать: {log_message}, {e}')
+                logging.error(f'Failed to create: {log_message}, {e}')
             for character in characters:
 
                 character_id = character['url'].split('/')[-2]
@@ -180,12 +341,23 @@ class DataProcessor:
                                 image_data=image_data,
                                 new_planet_id=new_planet_id,
                             )
-                            log_message = f"Entity: Character, Name: {character['name']}, Remote ID: {character_id}, Odoo ID: {new_character_id}"
+                            log_message = (f"Entity: Character, "
+                                           f"Name: {character['name']}, "
+                                           f"Remote ID: {character_id}, "
+                                           f"Odoo ID: {new_character_id}")
                             logging.info(log_message)
                         else:
                             new_character_id = existing_character[0]
+                            logging.info(
+                                f"Contact already exist {character['name']}"
+                            )
                     except Exception as e:
-                        log_message = f"не удалось создать: Entity: Character, Name: {character['name']}, Remote ID: {character_id}, Odoo ID: {new_character_id}"
+                        log_message = (
+                            f"не удалось создать: "
+                            f"Entity: Character, "
+                            f"Name: {character['name']}, "
+                            f"Remote ID: {character_id}, "
+                            f"Odoo ID: {new_character_id}")
                         logging.error(log_message, e)
 
 
@@ -198,7 +370,7 @@ def main():
 
 if __name__ == '__main__':
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         format=(
             '[%(asctime)s] [%(levelname)s] [%(funcName)s] [%(lineno)d]'
             '> %(message)s'
